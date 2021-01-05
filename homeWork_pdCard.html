@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>productCard</title>
+    <style>
+        img {
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 5px;
+            width: 150px;
+        }
+
+        img:hover {
+            box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+        }
+       
+        
+
+
+        
+    </style>
+</head>
+
+<body>
+    <div id=productCard></div>
+
+
+
+    <script>
+        const pd = [
+            {
+                "name": "柴犬",
+                "img": "pd_1.jpg",
+                "link": "https://zh.wikipedia.org/zh-tw/%E6%9F%B4%E7%8A%AC",
+                "price": 2800,
+                "discound": 2400
+            },
+            {
+                "name": "一隻貓咪",
+                "img": "pd_2.jpg",
+                "link": "https://zh.wikipedia.org/wiki/%E7%8C%AB",
+                "price": 2500,
+                "discound": 2300
+            },
+            {
+                "name": "很多貓咪",
+                "img": "pd_3.jpg",
+                "link": "http://www.omgnews.cc/post04254111016439",
+                "price": 10000,
+                "discound": 9999
+            },
+            {
+                "name": "水獺跟p助",
+                "img": "pd_4.jpg",
+                "link": "https://www.facebook.com/kanahei.tw/posts/2287736971438256/",
+                "price": 5600,
+                "discound": 4900
+            }
+        ]
+
+        const info = document.querySelector("#productCard")
+        for (let i = 0; i < pd.length; i++) {
+            info.innerHTML +=
+            `
+            <div class = "product-wrap">
+               <img src = ${pd[i].img} alt = "">         
+            <div> ${pd[i].name} </div>
+            <p> <s>原價:${pd[i].price}</s><br/>
+             <h3>特價:${pd[i].discound}</h3></p>
+                </div>
+            `
+        }
+
+    </script>
+
+
+</body>
+
+</html>

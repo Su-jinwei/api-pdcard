@@ -1,0 +1,25 @@
+{
+  "name": "homework_2020.12.30",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Su-jinwei/product_card.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Su-jinwei/product_card/issues"
+  },
+  "homepage": "https://github.com/Su-jinwei/product_card#readme",
+  "dependencies": {
+    "experss": "0.0.1-security",
+    "express": "^4.17.1",
+    "nodemo": "^1.0.0",
+    "nodemon": "^2.0.6"
+  }
+}

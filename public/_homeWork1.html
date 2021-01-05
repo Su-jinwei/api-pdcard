@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeWork1</title>
+</head>
+
+<body>
+    <div id="info"></div>
+    <div class="Theone"> class1 </div>
+    <div class="Theone"> class2 </div>
+
+    <script>
+
+      
+        const info = document.querySelectorAll(".Theone")
+
+
+        const prtgirl = [
+            {
+                "name": "Candy",
+                "tall": 170,
+                "age": [20, 21, 22, 23, 24] 
+            },
+            {
+                "name": "July",
+                "tall": 170,
+                "age": [20, 22, 24, 26, 28]
+            }
+        ]
+
+        for(let i = 0; i < info.length ; i++){
+            for(let j = 0 ; j < prtgirl[i].age.length ; j++){
+                info[i].innerHTML += prtgirl[i].name +  prtgirl[i].age[j]
+            }                              
+        }
+             
+
+    </script>
+
+</body>
+
+</html>
